@@ -2,7 +2,7 @@
     --bg-red: #8b2e1a;
     --frame-color: #d66545;
     --hero: #cfc086;
-    --list: #ffffff;
+    --list: #cd4747;
 }
 
 * {
@@ -11,11 +11,16 @@
     box-sizing: border-box;
 }
 
+
+a, a:visited {
+    text-decoration: none;
+}
+
 #window {
     background-color: var(--bg-red);
     width: 405px;
-    height: 749px;
-    padding: 5px 10px 5px 10px;
+    height: 770px;
+    padding: 6px 10px 6px 10px;
     margin: 100px;
     box-sizing: border-box;
 }
@@ -41,15 +46,17 @@
     margin-left: auto;
     margin-right: auto;
     width: 95%;
+    height: 215px;
 }
 
 ul {
-    color: var(--list);
+    color: #dd5633;
     margin-left: 30px;
     margin-top: 10px;
     font-size: 10px;
     list-style: none;
     padding-left: 0;
+    color:#d3ac76;
 }
 
 li::before {
@@ -61,9 +68,9 @@ li::before {
     background-color: var(--frame-color);
     width: 92.5%;
     margin: 10px auto;
-    padding: 2px 0 5px 5px;  /* top, right, bottom, left */
+    padding: 2px 0 4px 5px;  
 
-    color: white;
+    color: #e4b97d;
     font-size: 12px;
     font-weight: bold;
 }
@@ -76,3 +83,87 @@ li::before {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
+
+#input {
+    display: flex;
+    flex-direction: column;
+}
+
+#name_span {
+
+    margin-left: 0.8125rem;
+    font-size: 10px;
+    color:#d3ac76;
+}
+
+#name_input {
+
+    width: 93%;
+    align-self: center;
+    font-size: 10px;
+}
+
+#birthdate_span {
+
+    margin-left: 0.8125rem;
+    font-size: 10px;
+    color:#d3ac76;
+    margin-top: 0.33rem;
+}
+
+#birthdate_input {
+
+    width: 93%;
+    align-self: center;
+    font-size: 10px;
+}
+
+#destination_span {
+
+    margin-left: 0.8125rem;
+    font-size: 10px;
+    color:#d3ac76;
+    margin-top: 0.33rem;
+}
+
+
+#destinations {
+    width: 50%;
+    margin-left: 13px;
+}
+
+#return {
+    margin-left: 17px;
+    margin-top: 0.33rem;
+    margin-right: auto;
+}
+
+#return_checkbox_span {
+    color: #d3ac76;
+    font-size: 10px;
+    display: inline-block;
+    transform: translateY(-0.75px);
+}
+
+#travel_button {
+    width: 92.5%;
+    display: block;
+    margin-left: 13px;
+    padding: 6px 0;
+    font-size: 8px;
+    background-color: #c8c58b;
+    border: none;
+    
+}
+
+#contact_div {
+    margin-top: -2px;
+    margin-left: 20px;
+}
+
+#contact {
+    color: #d3ac76;
+    font-size: 10px;
+
+}
+

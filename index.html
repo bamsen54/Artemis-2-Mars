@@ -16,12 +16,41 @@
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JavaScript</li>
+                <li>JS</li>
             </ul>
 
             <div id="orange-bar">Transportfordon</div>
 
             <iframe id="video" src="https://www.youtube.com/embed/_eeZQw9PBc0" frameborder="0" allowfullscreen></iframe>
+
+            <div id="input">
+                <span id="name_span">Namn på resenär:</span>
+                <input id="name_input">
+
+                <span id="birthdate_span">Födelsedatum:</span>
+                <input id="birthdate_input" placeholder="åååå-mm-dd"> </input>
+
+                <span id="destination_span">Destination:</span>
+
+                 <select name="destinations" id="destinations">
+                    <option value="Månen">Månen</option>
+                    <option value="Mars">Mars</option>
+                    <option value="Venus">Venus</option>
+                </select>
+
+                <div>
+                    <input type="checkbox" id="return">
+                    <span id="return_checkbox_span">Återresa?</span> 
+                </div>
+
+                <button id="travel_button">Res</button>
+
+                <div id = "contact_div">
+                    <a href="index.html">
+                        <span id="contact"><i class="bi bi-envelope-fill" style="color: #d3ac76; padding-right: 3px; "></i>Kontakta oss</span> 
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
