@@ -27,7 +27,7 @@ a, a:visited {
 }
 
 #frame {
-    border: 1.25px solid;
+    border: 1.5px solid;
     border-color: var(--frame-color);
     width: 100%;
     height: 100%;
