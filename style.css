@@ -1,8 +1,9 @@
 :root {
-    --bg-red: #8b2e1a;
+    --bg-red: #97351c;
     --frame-color: #d66545;
     --hero: #cfc086;
     --list: #cd4747;
+    --text-color: #dd5633;
 }
 
 * {
@@ -19,14 +20,14 @@ a, a:visited {
 #window {
     background-color: var(--bg-red);
     width: 405px;
-    height: 770px;
+    height: 765px;
     padding: 6px 10px 6px 10px;
     margin: 100px;
     box-sizing: border-box;
 }
 
 #frame {
-    border: 1px solid var(--bg-red);
+    border: 1.25px solid;
     border-color: var(--frame-color);
     width: 100%;
     height: 100%;
@@ -35,25 +36,27 @@ a, a:visited {
 
 #hero {
     color: var(--hero);
-    font-size: 16px;
-    margin-top: 25px;
+    font-size: 18px;
+    margin-top: 40px;
     margin-left: 16px;
+    margin-bottom: 5px;
 }
 
 #mars-image {
     margin-top: 15px;
     display: block;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-    height: 215px;
+    height: 210px;
 }
 
 ul {
-    color: #dd5633;
+    color: var(--text-color);
     margin-left: 30px;
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 9px;
     list-style: none;
     padding-left: 0;
     color:#d3ac76;
@@ -68,9 +71,8 @@ li::before {
     background-color: var(--frame-color);
     width: 92.5%;
     margin: 10px auto;
-    padding: 2px 0 4px 5px;  
-
-    color: #e4b97d;
+    padding: 2px 0 4px 2px;  
+    color: #ebbb7f;
     font-size: 12px;
     font-weight: bold;
 }
@@ -78,7 +80,6 @@ li::before {
 #video {
     width: 92.5%;
     margin: -5px auto 10px auto;
-
     display: block;
     aspect-ratio: 16 / 9;
     object-fit: cover;
@@ -90,21 +91,18 @@ li::before {
 }
 
 #name_span {
-
     margin-left: 0.8125rem;
     font-size: 10px;
     color:#d3ac76;
 }
 
 #name_input {
-
     width: 93%;
     align-self: center;
     font-size: 10px;
 }
 
 #birthdate_span {
-
     margin-left: 0.8125rem;
     font-size: 10px;
     color:#d3ac76;
@@ -112,30 +110,35 @@ li::before {
 }
 
 #birthdate_input {
-
     width: 93%;
     align-self: center;
     font-size: 10px;
+    color: black;
+}
+
+#birthdate_input::placeholder {
+    color: black;
 }
 
 #destination_span {
-
     margin-left: 0.8125rem;
     font-size: 10px;
     color:#d3ac76;
     margin-top: 0.33rem;
 }
 
-
 #destinations {
     width: 50%;
     margin-left: 13px;
+    font-size: 10px;
 }
 
 #return {
     margin-left: 17px;
     margin-top: 0.33rem;
     margin-right: auto;
+    width: 10px;
+    height: 10px;
 }
 
 #return_checkbox_span {
@@ -150,10 +153,15 @@ li::before {
     display: block;
     margin-left: 13px;
     padding: 6px 0;
-    font-size: 8px;
+    font-size: 9px;
     background-color: #c8c58b;
     border: none;
-    
+    font-weight: bolder;
+    color: #d87320;
+}
+
+#travel_button:hover {
+    cursor: pointer;
 }
 
 #contact_div {
@@ -164,6 +172,4 @@ li::before {
 #contact {
     color: #d3ac76;
     font-size: 10px;
-
 }
-
